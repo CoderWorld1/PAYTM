@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .header a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .amount {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .amount h2 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .amount p {
+            margin: 0;
+            color: #666;
+            font-size: 1.2em;
+        }
+        .amount .verified {
+            color: #00c853;
+            font-size: 1.2em;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .buttons .split {
+            color: #00796b;
+            border-color: #00796b;
+        }
+        .buttons .tag {
+            color: #388e3c;
+            border-color: #388e3c;
+        }
+        .details {
+            margin: 20px 0;
+        }
+        .details .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .details .row img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .details .row .text {
+            flex: 1;
+            margin-left: 10px;
+        }
+        .details .row .text h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .details .row .text p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .details .row .text .pay-again {
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            color: #00aaff;
+            border: 1px solid #00aaff;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .footer {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">←</a>
+            <h1>Paid Successfully</h1>
+            <div>
+                <a href="#">Share</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <div class="amount">
+            <h2>₹5000</h2>
+            <p>Rupees Five Thousand Only <span class="verified">✔</span></p>
+        </div>
+
+        <div class="buttons">
+            <button class="split">Split this Payment</button>
+            <button class="tag">Add Tag</button>
+        </div>
+
+        <div class="details">
+            <div class="row">
+                <div class="text">
+                    <h3>To</h3>
+                    <p>Prabhakar Sharma</p>
+                    <p>UPI ID: prabhakarsharma322@okicici</p>
+                    <button class="pay-again">Pay Again</button>
+                </div>
+                <img src="p.png" alt="Merchant Icon">
+            </div>
+            <div class="row">
+                <div class="text">
+                    <h3>From</h3>
+                    <p>Vaibhav Shrivastav</p>
+                    <p>UPI ID: 6386838513@paytm</p>
+                    <p>Fi (Federal Bank) - 6031</p>
+                </div>
+                <img src="vaibhav1.jpg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Paid at 16:47:21
+                 PM, 20 July 2024</p>
+            <p>UPI Ref No: 452309732561 <a href="#">Copy</a></p>
+        </div>
+    </div>
+</body>
+</html>
